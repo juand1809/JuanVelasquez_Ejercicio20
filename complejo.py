@@ -13,7 +13,8 @@ class Complejo ():
         self.norma = np.sqrt((self.real ** 2) + (self.imaginario **2))
     
     def pow(self,n):
-        self.pow = math.pow(complex(self.real,self.imaginario),n)
+        num = self(self.real,self.imaginario)
+        self.pow = np.power(num,n)
     
 
         
